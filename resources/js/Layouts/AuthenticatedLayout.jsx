@@ -105,7 +105,6 @@ export default function Authenticated({ children }) {
                         </div>
 
                         <div className="mt-3 space-y-1">
-                            <ResponsiveNavLink href={route('profile.edit')}>Profile</ResponsiveNavLink>
                             <ResponsiveNavLink method="post" onClick={() => {
                                 api.logout();
                                 window.location = '/login';
