@@ -6,7 +6,7 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link } from '@inertiajs/react';
 import api from '@/Classes/Api';
 
-export default function Authenticated({ header, children }) {
+export default function Authenticated({ children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
 
     return (
@@ -106,7 +106,10 @@ export default function Authenticated({ header, children }) {
 
                         <div className="mt-3 space-y-1">
                             <ResponsiveNavLink href={route('profile.edit')}>Profile</ResponsiveNavLink>
-                            <ResponsiveNavLink method="post" href={route('logout')} as="button">
+                            <ResponsiveNavLink method="post" onClick={() => {
+                                api.logout();
+                                window.location = '/login';
+                            }} as="button">
                                 Log Out
                             </ResponsiveNavLink>
                         </div>
