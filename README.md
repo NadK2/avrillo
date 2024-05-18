@@ -4,14 +4,24 @@ An api to fetch 5 random Kanye quotes.
 
 ## Requirements
 
-php8.2 or greater
+php 8.2 or greater\
+node 18 or greater\
+npm 10 or greater
 
 ## Installation
 
-Run the following command in the root directory.
+clone the git repo
+```
+git clone https://github.com/NadK2/avrillo.git
+```
 
+Run the following commands in the root directory.
 ```bash
-composer install
+> composer install
+> npm i
+> php artisan migrate
+> php artisan db:seed
+> npm run build
 ```
 
 ## Usage
@@ -20,9 +30,19 @@ start the dev server by running the following command.
 ```bash
 php artisan serve
 ```
+## UI Consuming Api
+A basic UI consuming the api can be accessed at the following url.\
+Demo user:\
+email: test@email.com\
+password: test
+```
+http://locahost:8000/
+```
 
+## API
 #### Authentication
-The auth endpoint accepts an email/password combo. It returns a token to use with the api. A demo user has been setup to test with. Demo user: {email: "test@email.com", password: "test" }
+The auth endpoint accepts an email/password combo. It returns a token to use with the api. A demo user has been setup to test with.\
+Demo user: {email: "test@email.com", password: "test" }
 ```bash
 Post : http://localhost:8000/auth
 
