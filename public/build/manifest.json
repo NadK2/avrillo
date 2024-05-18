@@ -1,33 +1,33 @@
 {
-  "_Api-B-r5AIv0.js": {
-    "file": "assets/Api-B-r5AIv0.js",
+  "_Api-ChkIBSxI.js": {
+    "file": "assets/Api-ChkIBSxI.js",
     "name": "Api",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
   "resources/js/Pages/Auth/Login.jsx": {
-    "file": "assets/Login-fAIjlBgn.js",
+    "file": "assets/Login-CN6Vyj0B.js",
     "name": "Login",
     "src": "resources/js/Pages/Auth/Login.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Api-B-r5AIv0.js"
+      "_Api-ChkIBSxI.js"
     ]
   },
   "resources/js/Pages/Dashboard.jsx": {
-    "file": "assets/Dashboard-vN1NvrPn.js",
+    "file": "assets/Dashboard-DROaOi7D.js",
     "name": "Dashboard",
     "src": "resources/js/Pages/Dashboard.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_Api-B-r5AIv0.js"
+      "_Api-ChkIBSxI.js"
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-DCRPDl1w.js",
+    "file": "assets/app-DME-YU80.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
@@ -36,7 +36,7 @@
       "resources/js/Pages/Dashboard.jsx"
     ],
     "css": [
-      "assets/app-CFz9vVaP.css"
+      "assets/app-BAgSWS6h.css"
     ]
   }
 }
